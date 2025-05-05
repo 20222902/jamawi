@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البروتين والمكملات - جماوي</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">جماوي</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="articles.html">المقالات</a></li>
+                    <li><a href="protein.html">البروتين والمكملات</a></li>
+                    <li><a href="plans.html">خطط التدريب</a></li>
+                    <li><a href="subscription.html">الاشتراكات</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>البروتين والمكملات</h1>
+            <p>أفضل المنتجات لدعم أهدافك التدريبية وتعزيز الأداء</p>
+        </div>
+    </section>
+
+    <section class="products-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>لماذا تختار منتجاتنا؟</h2>
+                <p>نحن نقدم فقط أفضل المكملات الغذائية عالية الجودة من مصادر موثوقة. جميع منتجاتنا خضعت لاختبارات صارمة لضمان السلامة والفعالية، كما أنها حاصلة على شهادات عالمية تضمن جودتها.</p>
+                <div class="quality-badges">
+                    <div class="badge">
+                        <i class="fas fa-certificate"></i>
+                        <span>جودة عالمية</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-flask"></i>
+                        <span>مختبرة علمياً</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>آمنة للاستخدام</span>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-image">
+                <img src="protein-intro.jpg" alt="مكملات غذائية">
+            </div>
+        </div>
+    </section>
+
+    <section class="products-filter">
+        <div class="container">
+            <h3>تصفح منتجاتنا</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="protein">البروتين</button>
+                <button class="filter-btn" data-filter="pre-workout">قبل التمرين</button>
+                <button class="filter-btn" data-filter="vitamins">الفيتامينات</button>
+                <button class="filter-btn" data-filter="weight-gain">زيادة الوزن</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="protein">
+                    <div class="product-badge">الأكثر مبيعاً</div>
+                    <div class="product-img">
+                        <img src="../images/product1.jpg" alt="بروتين مصل اللبن">
+                    </div>
+                    <div class="product-info">
+                        <h3>بروتين مصل اللبن - أيزو</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(٤٢ تقييم)</span>
+                        </div>
+                        <p>بروتين عالي الجودة مستخلص من مصل اللبن، مثالي لبناء العضلات والتعافي بعد التمرين.</p>
+                        <div class="product-details">
+                            <span><i class="fas fa-weight"></i> ٢ كجم</span>
+                            <span><i class="fas fa-fire"></i> ٢٤ جرام بروتين</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="new-price">١٢٠٠ جنيه</span>
+                            <span class="old-price">١٥٠٠ جنيه</span>
+                        </div>
+                        <a href="#" class="btn-small">أضف إلى السلة</a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="pre-workout">
+                    <div class="product-img">
+                        <img src="../images/product2.jpg" alt="مكمل قبل التمرين">
+                    </div>
+                    <div class="product-info">
+                        <h3>باور بوست - مكمل قبل التمرين</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(٣٨ تقييم)</span>
+                        </div>
+                        <p>مكمل غذائي يزيد من الطاقة والتركيز خلال التمرين، ويعزز الأداء لتحقيق أقصى استفادة.</p>
+                        <div class="product-details">
+                            <span><i class="fas fa-weight"></i> ٣٠٠ جرام</span>
+                            <span><i class="fas fa-bolt"></i> ٣٠ حصة</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="new-price">٨٥٠ جنيه</span>
+                        </div>
+                        <a href="#" class="btn-small">أضف إلى السلة</a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="vitamins">
+                    <div class="product-img">
+                        <img src="../images/product3.jpg" alt="مالتي فيتامين">
+                    </div>
+                    <div class="product-info">
+                        <h3>مالتي فيتامين للرياضيين</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(٥٦ تقييم)</span>
+                        </div>
+                        <p>مزيج متكامل من الفيتامينات والمعادن الأساسية للرياضيين، يدعم صحة الجسم ويعزز المناعة.</p>
+                        <div class="product-details">
+                            <span><i class="fas fa-pills"></i> ٦٠ قرص</span>
+                            <span><i class="fas fa-calendar-day"></i> شهرين</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="new-price">٦٠٠ جنيه</span>
+                            <span class="old-price">٧٥٠ جنيه</span>
+                        </div>
+                        <a href="#" class="btn-small">أضف إلى السلة</a>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="weight-gain">
+                    <div class="product-img">
+                        <img src="../images/product4.jpg" alt="ماس جينر">
+                    </div>
+                    <div class="product-info">
+                        <h3>ماس جينر - مكمل زيادة الوزن</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <span>(٣٢ تقييم)</span>
+                        </div>
+                        <p>مكمل غذائي عالي السعرات الحرارية، مصمم خصيصاً للأشخاص الذين يرغبون في زيادة الوزن وبناء العضلات.</p>
+                        <div class="product-details">
+                            <span><i class="fas fa-weight"></i> ٥ كجم</span>
+                            <span><i class="fas fa-fire"></i> ١٢٠٠ سعر حراري</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="new-price">١٨٠٠ جنيه</span>
+                        </div>
+                        <a href="#" class="btn-small">أضف إلى السلة</a>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="protein">
+                    <div class="product-img">
+                        <img src="../images/product5.jpg" alt="كازين بروتين">
+                    </div>
+                    <div class="product-info">
+                        <h3>كازين بروتين - بطيء الهضم</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(٤٥ تقييم)</span>
+                        </div>
+                        <p>بروتين بطيء الهضم، مثالي للاستخدام قبل النوم لتوفير تغذية مستمرة للعضلات خلال فترات الراحة الطويلة.</p>
+                        <div class="product-details">
+                            <span><i class="fas fa-weight"></i> ١ كجم</span>
+                            <span><i class="fas fa-fire"></i> ٢٥ جرام بروتين</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="new-price">٩٥٠ جنيه</span>
+                            <span class="old-price">١١٠٠ جنيه</span>
+                        </div>
+                        <a href="#" class="btn-small">أضف إلى السلة</a>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="vitamins">
+                    <div class="product-badge">جديد</div>
+                    <div class="product-img">
+                        <img src="../images/product6.jpg" alt="أوميغا 3">
+                    </div>
+                    <div class="product-info">
+                        <h3>أوميغا ٣ - أحماض دهنية أساسية</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(٢٧ تقييم)</span>
+                        </div>
+                        <p>مكمل غذائي غني بأحماض أوميغا ٣ الدهنية الأساسية، يدعم صحة القلب والمفاصل ويساعد في التعافي.</p>
+                        <div class="product-details">
+                            <span><i class="fas fa-pills"></i> ١٢٠ كبسولة</span>
+                            <span><i class="fas fa-calendar-day"></i> شهرين</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="new-price">٧٠٠ جنيه</span>
+                        </div>
+                        <a href="#" class="btn-small">أضف إلى السلة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-consultation">
+        <div class="container">
+            <div class="consultation-content">
+                <h2>تحتاج إلى مساعدة في اختيار المنتج المناسب؟</h2>
+                <p>يمكنك التواصل مع خبرائنا للحصول على استشارة مجانية حول المكملات الغذائية المناسبة لأهدافك</p>
+                <a href="contact.html" class="btn">احصل على استشارة مجانية</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>جماوي</h2>
+                    <p>الوجهة الأولى لكمال الأجسام واللياقة البدنية</p>
+                </div>
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="articles.html">المقالات</a></li>
+                        <li><a href="protein.html">البروتين والمكملات</a></li>
+                        <li><a href="plans.html">خطط التدريب</a></li>
+                        <li><a href="subscription.html">الاشتراكات</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>تواصل معنا</h3>
+                    <p><i class="fas fa-envelope"></i> info@jamawi.com</p>
+                    <p><i class="fas fa-phone"></i> 01064621203</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 جماوي - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    
+    <!-- AI Chat Widget -->
+    <div class="chat-button">
+        <i class="fas fa-comment-dots"></i>
+        <span>تحدث مع المدرب</span>
+    </div>
+    
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3><i class="fas fa-robot"></i> المدرب الافتراضي</h3>
+            <button class="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-initial-form">
+                <h4>دعنا نساعدك في تحقيق أهدافك</h4>
+                <p>يرجى ملء المعلومات التالية للحصول على توصيات مخصصة</p>
+                <div class="form-group-chat">
+                    <label for="user-name">الاسم</label>
+                    <input type="text" id="user-name" placeholder="أدخل اسمك">
+                </div>
+                <div class="form-group-chat">
+                    <label for="user-goal">هدفك</label>
+                    <select id="user-goal">
+                        <option value="">اختر هدفك</option>
+                        <option value="بناء العضلات">بناء العضلات</option>
+                        <option value="حرق الدهون">حرق الدهون</option>
+                        <option value="زيادة القوة">زيادة القوة</option>
+                        <option value="تحسين اللياقة">تحسين اللياقة</option>
+                    </select>
+                </div>
+                <div class="form-group-chat">
+                    <label for="user-level">مستواك الحالي</label>
+                    <select id="user-level">
+                        <option value="">اختر مستواك</option>
+                        <option value="مبتدئ">مبتدئ</option>
+                        <option value="متوسط">متوسط</option>
+                        <option value="متقدم">متقدم</option>
+                    </select>
+                </div>
+                <button class="start-chat-btn">ابدأ المحادثة</button>
+            </div>
+            <div class="chat-messages" style="display: none;">
+                <div class="chat-message bot">
+                    <div class="message-content">
+                        مرحبا! أنا المدرب الافتراضي في جماوي. كيف يمكنني مساعدتك اليوم؟
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-footer" style="display: none;">
+            <input type="text" class="chat-input" placeholder="اكتب رسالتك هنا...">
+            <button class="send-message"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    
+    <script src="chat.js"></script>
+    <script>
+        // Product filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const productCards = document.querySelectorAll('.product-card');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get filter value
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filter products
+                    productCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

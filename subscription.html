@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الاشتراكات - جماوي</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- EmailJS Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual EmailJS public key
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">جماوي</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="articles.html">المقالات</a></li>
+                    <li><a href="protein.html">البروتين والمكملات</a></li>
+                    <li><a href="plans.html">خطط التدريب</a></li>
+                    <li><a href="subscription.html">الاشتراكات</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>الاشتراكات</h1>
+            <p>اختر الاشتراك المناسب لتحقيق أهدافك</p>
+        </div>
+    </section>
+
+    <section class="subscription-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>اشتراكات تناسب احتياجاتك</h2>
+                <p>نقدم لك مجموعة متنوعة من خيارات الاشتراك في خدماتنا التدريبية والغذائية، بدءاً من الاشتراكات الشهرية وحتى الخطط السنوية. اختر ما يناسبك واستمتع بمزايا حصرية.</p>
+                <div class="subscription-benefits">
+                    <div class="benefit">
+                        <i class="fas fa-medal"></i>
+                        <h3>جودة عالية</h3>
+                        <p>برامج مصممة من قبل خبراء محترفين</p>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-headset"></i>
+                        <h3>دعم مستمر</h3>
+                        <p>متابعة شخصية من مدربين متخصصين</p>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-percent"></i>
+                        <h3>خصومات خاصة</h3>
+                        <p>امتيازات حصرية على المكملات والمنتجات</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscription-options">
+        <div class="container">
+            <h2 class="section-title">خيارات الاشتراك</h2>
+            <div class="sub-categories">
+                <div class="sub-category active" data-target="individual">
+                    <i class="fas fa-user"></i>
+                    <span>اشتراكات فردية</span>
+                </div>
+                <div class="sub-category" data-target="group">
+                    <i class="fas fa-users"></i>
+                    <span>اشتراكات جماعية</span>
+                </div>
+                <div class="sub-category" data-target="online">
+                    <i class="fas fa-laptop"></i>
+                    <span>اشتراكات أونلاين</span>
+                </div>
+            </div>
+
+            <div class="subscription-plans individual active-plans">
+                <div class="subscription-card">
+                    <div class="sub-header">
+                        <h3>اشتراك شهري</h3>
+                        <div class="sub-price">
+                            <span class="price">٩٠٠</span>
+                            <span class="currency">جنيه</span>
+                            <span class="period">/ شهر</span>
+                        </div>
+                    </div>
+                    <div class="sub-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> خطة تدريبية مخصصة</li>
+                            <li><i class="fas fa-check"></i> نظام غذائي متكامل</li>
+                            <li><i class="fas fa-check"></i> متابعة أسبوعية مع المدرب</li>
+                            <li><i class="fas fa-check"></i> دخول المنشأة طوال الشهر</li>
+                            <li><i class="fas fa-check"></i> خصم 10% على المكملات</li>
+                        </ul>
+                    </div>
+                    <div class="sub-footer">
+                        <a href="#subscription-form" class="btn subscribe-btn" data-plan="شهري" data-price="900">اشترك الآن</a>
+                    </div>
+                </div>
+
+                <div class="subscription-card featured">
+                    <div class="sub-badge">الأكثر قيمة</div>
+                    <div class="sub-header">
+                        <h3>اشتراك ربع سنوي</h3>
+                        <div class="sub-price">
+                            <span class="price">٢٤٠٠</span>
+                            <span class="currency">جنيه</span>
+                            <span class="period">/ ٣ أشهر</span>
+                        </div>
+                    </div>
+                    <div class="sub-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> خطة تدريبية مخصصة</li>
+                            <li><i class="fas fa-check"></i> نظام غذائي متكامل</li>
+                            <li><i class="fas fa-check"></i> متابعة أسبوعية مع المدرب</li>
+                            <li><i class="fas fa-check"></i> دخول المنشأة طوال فترة الاشتراك</li>
+                            <li><i class="fas fa-check"></i> خصم 15% على المكملات</li>
+                            <li><i class="fas fa-check"></i> جلسة تقييم شهرية</li>
+                        </ul>
+                    </div>
+                    <div class="sub-footer">
+                        <a href="#subscription-form" class="btn subscribe-btn" data-plan="ربع سنوي" data-price="2400">اشترك الآن</a>
+                    </div>
+                </div>
+
+                <div class="subscription-card">
+                    <div class="sub-header">
+                        <h3>اشتراك سنوي</h3>
+                        <div class="sub-price">
+                            <span class="price">٨٥٠٠</span>
+                            <span class="currency">جنيه</span>
+                            <span class="period">/ سنة</span>
+                        </div>
+                    </div>
+                    <div class="sub-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> خطة تدريبية مخصصة</li>
+                            <li><i class="fas fa-check"></i> نظام غذائي متكامل</li>
+                            <li><i class="fas fa-check"></i> متابعة أسبوعية مع المدرب</li>
+                            <li><i class="fas fa-check"></i> دخول المنشأة طوال فترة الاشتراك</li>
+                            <li><i class="fas fa-check"></i> خصم 25% على المكملات</li>
+                            <li><i class="fas fa-check"></i> جلسة تقييم شهرية</li>
+                            <li><i class="fas fa-check"></i> هدية مكملات غذائية</li>
+                            <li><i class="fas fa-check"></i> حقيبة رياضية حصرية</li>
+                        </ul>
+                    </div>
+                    <div class="sub-footer">
+                        <a href="#subscription-form" class="btn subscribe-btn" data-plan="سنوي" data-price="8500">اشترك الآن</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subscription-plans group">
+                <div class="subscription-card">
+                    <div class="sub-header">
+                        <h3>اشتراك جماعي (٢-٣ أشخاص)</h3>
+                        <div class="sub-price">
+                            <span class="price">٢٢٠٠</span>
+                            <span class="currency">جنيه</span>
+                            <span class="period">/ شهر</span>
+                        </div>
+                    </div>
+                    <div class="sub-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> خطط تدريبية متوافقة</li>
+                            <li><i class="fas fa-check"></i> تدريب جماعي</li>
+                            <li><i class="fas fa-check"></i> متابعة أسبوعية</li>
+                            <li><i class="fas fa-check"></i> دخول المنشأة طوال فترة الاشتراك</li>
+                            <li><i class="fas fa-check"></i> خصم 10% على المكملات</li>
+                        </ul>
+                    </div>
+                    <div class="sub-footer">
+                        <a href="#subscription-form" class="btn subscribe-btn" data-plan="جماعي (2-3)" data-price="2200">اشترك الآن</a>
+                    </div>
+                </div>
+
+                <div class="subscription-card featured">
+                    <div class="sub-badge">الأكثر طلباً</div>
+                    <div class="sub-header">
+                        <h3>اشتراك جماعي (٤-٦ أشخاص)</h3>
+                        <div class="sub-price">
+                            <span class="price">٤٠٠٠</span>
+                            <span class="currency">جنيه</span>
+                            <span class="period">/ شهر</span>
+                        </div>
+                    </div>
+                    <div class="sub-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> خطط تدريبية متوافقة</li>
+                            <li><i class="fas fa-check"></i> تدريب جماعي</li>
+                            <li><i class="fas fa-check"></i> متابعة أسبوعية</li>
+                            <li><i class="fas fa-check"></i> دخول المنشأة طوال فترة الاشتراك</li>
+                            <li><i class="fas fa-check"></i> خصم 15% على المكملات</li>
+                            <li><i class="fas fa-check"></i> جلسة تحفيزية شهرية</li>
+                        </ul>
+                    </div>
+                    <div class="sub-footer">
+                        <a href="#subscription-form" class="btn subscribe-btn" data-plan="جماعي (4-6)" data-price="4000">اشترك الآن</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subscription-plans online">
+                <div class="subscription-card">
+                    <div class="sub-header">
+                        <h3>متابعة أونلاين شهرية</h3>
+                        <div class="sub-price">
+                            <span class="price">٥٠٠</span>
+                            <span class="currency">جنيه</span>
+                            <span class="period">/ شهر</span>
+                        </div>
+                    </div>
+                    <div class="sub-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> خطة تدريبية شخصية</li>
+                            <li><i class="fas fa-check"></i> نظام غذائي أسبوعي</li>
+                            <li><i class="fas fa-check"></i> متابعة عبر التطبيق</li>
+                            <li><i class="fas fa-check"></i> فيديوهات توضيحية للتمارين</li>
+                            <li><i class="fas fa-check"></i> مكالمة فيديو أسبوعية مع المدرب</li>
+                        </ul>
+                    </div>
+                    <div class="sub-footer">
+                        <a href="#subscription-form" class="btn subscribe-btn" data-plan="أونلاين شهري" data-price="500">اشترك الآن</a>
+                    </div>
+                </div>
+
+                <div class="subscription-card featured">
+                    <div class="sub-badge">الأفضل قيمة</div>
+                    <div class="sub-header">
+                        <h3>متابعة أونلاين لمدة ٦ أشهر</h3>
+                        <div class="sub-price">
+                            <span class="price">٢٥٠٠</span>
+                            <span class="currency">جنيه</span>
+                            <span class="period">/ ٦ أشهر</span>
+                        </div>
+                    </div>
+                    <div class="sub-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> خطة تدريبية شخصية</li>
+                            <li><i class="fas fa-check"></i> نظام غذائي أسبوعي مع تعديلات شهرية</li>
+                            <li><i class="fas fa-check"></i> متابعة عبر التطبيق</li>
+                            <li><i class="fas fa-check"></i> فيديوهات توضيحية للتمارين</li>
+                            <li><i class="fas fa-check"></i> مكالمة فيديو أسبوعية مع المدرب</li>
+                            <li><i class="fas fa-check"></i> دعم على مدار الساعة</li>
+                            <li><i class="fas fa-check"></i> خصم 15% على المكملات</li>
+                        </ul>
+                    </div>
+                    <div class="sub-footer">
+                        <a href="#subscription-form" class="btn subscribe-btn" data-plan="أونلاين 6 أشهر" data-price="2500">اشترك الآن</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="subscription-form" class="subscription-form-section">
+        <div class="container">
+            <h2 class="section-title">اطلب اشتراكك الآن</h2>
+            <div class="form-wrapper">
+                <div class="selected-plan">
+                    <h3>الاشتراك المختار: <span id="selected-plan-name">غير محدد</span></h3>
+                    <p>السعر: <span id="selected-plan-price">0</span> جنيه</p>
+                </div>
+                <form id="subscription-form" class="subscription-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">العمر</label>
+                            <input type="number" id="age" name="age" min="16" max="70" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="goal">هدفك من التدريب</label>
+                        <select id="goal" name="goal" required>
+                            <option value="">اختر هدفك</option>
+                            <option value="بناء العضلات">بناء العضلات</option>
+                            <option value="حرق الدهون">حرق الدهون</option>
+                            <option value="زيادة القوة">زيادة القوة</option>
+                            <option value="تحسين اللياقة">تحسين اللياقة</option>
+                            <option value="آخر">آخر</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">ملاحظات إضافية</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment">طريقة الدفع</label>
+                        <select id="payment" name="payment" required>
+                            <option value="">اختر طريقة الدفع</option>
+                            <option value="نقدي">دفع نقدي</option>
+                            <option value="بطاقة ائتمان">بطاقة ائتمان</option>
+                            <option value="تحويل بنكي">تحويل بنكي</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">تأكيد الاشتراك</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">آراء المشتركين</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="testimonial-img">
+                        <img src="../images/testimonial1.jpg" alt="مشترك">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"اشتركت في الخطة ربع السنوية وكانت تجربة رائعة. المدربين محترفين جداً ويهتمون بأدق التفاصيل. النتائج كانت مذهلة!"</p>
+                        <div class="testimonial-author">
+                            <h4>محمد أحمد</h4>
+                            <span>مشترك منذ ٥ أشهر</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-img">
+                        <img src="testimonial2.jpg" alt="مشتركة">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"المتابعة الأونلاين كانت الخيار المثالي لي بسبب ظروف عملي. الخطة مرنة ومصممة خصيصاً لاحتياجاتي. أنصح بها بشدة!"</p>
+                        <div class="testimonial-author">
+                            <h4>سارة محمود</h4>
+                            <span>مشتركة منذ ٣ أشهر</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-img">
+                        <img src="images/testimonial3.jpg" alt="مشترك">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"الاشتراك الجماعي كان فكرة ممتازة لي ولأصدقائي. نحفز بعضنا البعض ونستمتع بالتدريب معاً. المدربين رائعين والأجواء ممتازة."</p>
+                        <div class="testimonial-author">
+                            <h4>خالد عبدالله</h4>
+                            <span>مشترك منذ ٧ أشهر</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>جماوي</h2>
+                    <p>الوجهة الأولى لكمال الأجسام واللياقة البدنية</p>
+                </div>
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="articles.html">المقالات</a></li>
+                        <li><a href="protein.html">البروتين والمكملات</a></li>
+                        <li><a href="plans.html">خطط التدريب</a></li>
+                        <li><a href="subscription.html">الاشتراكات</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>تواصل معنا</h3>
+                    <p><i class="fas fa-envelope"></i> info@jamawi.com</p>
+                    <p><i class="fas fa-phone"></i> +20 123 456 7890</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 جماوي - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="subscription.js"></script>
+</body>
+</html> 

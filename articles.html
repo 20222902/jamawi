@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المقالات - جماوي</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- EmailJS Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual EmailJS public key
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="../index.html">جماوي</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="articles.html">المقالات</a></li>
+                    <li><a href="protein.html">البروتين والمكملات</a></li>
+                    <li><a href="plans.html">خطط التدريب</a></li>
+                    <li><a href="subscription.html">الاشتراكات</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>المقالات</h1>
+            <p>اكتشف أحدث المقالات والنصائح حول التدريب والتغذية</p>
+        </div>
+    </section>
+
+    <section class="articles-page">
+        <div class="container">
+            <div class="articles-filter">
+                <h3>تصفية المقالات</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">الكل</button>
+                    <button class="filter-btn" data-filter="training">التدريب</button>
+                    <button class="filter-btn" data-filter="nutrition">التغذية</button>
+                    <button class="filter-btn" data-filter="lifestyle">نمط الحياة</button>
+                </div>
+            </div>
+
+            <div class="articles-grid">
+                <!-- Article 1 -->
+                <div class="article-card" data-category="training">
+                    <div class="article-img">
+                        <img src="../images/article1.jpg" alt="تمارين القوة">
+                        <span class="category">التدريب</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>أفضل تمارين القوة لبناء العضلات</h3>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> ١٠ يناير ٢٠٢٣</span>
+                            <span><i class="far fa-eye"></i> ٣٥٠ مشاهدة</span>
+                        </div>
+                        <p>تعرف على أهم التمارين التي تساعدك في بناء كتلة عضلية قوية ومتوازنة، وكيفية أدائها بشكل صحيح لتجنب الإصابات وتحقيق أقصى استفادة.</p>
+                        <a href="#" class="btn-small">اقرأ المزيد</a>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="article-card" data-category="nutrition">
+                    <div class="article-img">
+                        <img src="../images/article2.jpg" alt="البروتين">
+                        <span class="category">التغذية</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>كيفية اختيار البروتين المناسب</h3>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> ١٥ يناير ٢٠٢٣</span>
+                            <span><i class="far fa-eye"></i> ٤٢٠ مشاهدة</span>
+                        </div>
+                        <p>دليل شامل لاختيار البروتين المناسب لأهدافك وحاجة جسمك، مع شرح مفصل لأنواع البروتينات المختلفة وفوائد كل منها.</p>
+                        <a href="#" class="btn-small">اقرأ المزيد</a>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="article-card" data-category="training">
+                    <div class="article-img">
+                        <img src="../images/article3.jpg" alt="التعافي">
+                        <span class="category">التدريب</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>أهمية التعافي في برنامجك التدريبي</h3>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> ٢٢ يناير ٢٠٢٣</span>
+                            <span><i class="far fa-eye"></i> ٣٨٥ مشاهدة</span>
+                        </div>
+                        <p>تعرف على كيفية تحقيق التوازن بين التدريب والراحة لتحقيق أفضل النتائج، وتجنب الإصابات وتعزيز نمو العضلات.</p>
+                        <a href="#" class="btn-small">اقرأ المزيد</a>
+                    </div>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="article-card" data-category="lifestyle">
+                    <div class="article-img">
+                        <img src="../images/article4.jpg" alt="النوم">
+                        <span class="category">نمط الحياة</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>دور النوم في بناء العضلات وحرق الدهون</h3>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> ٥ فبراير ٢٠٢٣</span>
+                            <span><i class="far fa-eye"></i> ٣١٠ مشاهدة</span>
+                        </div>
+                        <p>اكتشف أهمية النوم الجيد في تحقيق أهدافك الرياضية، وكيف يمكن أن يؤثر النوم على مستويات الهرمونات ونمو العضلات وحرق الدهون.</p>
+                        <a href="#" class="btn-small">اقرأ المزيد</a>
+                    </div>
+                </div>
+
+                <!-- Article 5 -->
+                <div class="article-card" data-category="nutrition">
+                    <div class="article-img">
+                        <img src="../images/article5.jpg" alt="الكربوهيدرات">
+                        <span class="category">التغذية</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>حقيقة الكربوهيدرات: صديق أم عدو؟</h3>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> ١٢ فبراير ٢٠٢٣</span>
+                            <span><i class="far fa-eye"></i> ٤٠٠ مشاهدة</span>
+                        </div>
+                        <p>تحليل علمي لدور الكربوهيدرات في النظام الغذائي للرياضيين، وكيفية استخدامها بشكل صحيح لتحقيق أهدافك الرياضية.</p>
+                        <a href="#" class="btn-small">اقرأ المزيد</a>
+                    </div>
+                </div>
+
+                <!-- Article 6 -->
+                <div class="article-card" data-category="lifestyle">
+                    <div class="article-img">
+                        <img src="../images/article6.jpg" alt="الإجهاد">
+                        <span class="category">نمط الحياة</span>
+                    </div>
+                    <div class="article-content">
+                        <h3>كيف يؤثر الإجهاد على نتائجك الرياضية</h3>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> ٢٠ فبراير ٢٠٢٣</span>
+                            <span><i class="far fa-eye"></i> ٢٩٥ مشاهدة</span>
+                        </div>
+                        <p>دراسة تأثير الإجهاد على الجسم والأداء الرياضي، وطرق التعامل مع الضغوط اليومية للحفاظ على مستوى لياقتك.</p>
+                        <a href="#" class="btn-small">اقرأ المزيد</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="active">١</a>
+                <a href="#">٢</a>
+                <a href="#">٣</a>
+                <a href="#" class="next">التالي <i class="fas fa-chevron-left"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>اشترك في النشرة البريدية</h2>
+            <p>احصل على أحدث المقالات والنصائح مباشرة إلى بريدك الإلكتروني</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="أدخل بريدك الإلكتروني" required>
+                <button type="submit" class="btn">اشترك الآن</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>جماوي</h2>
+                    <p>الوجهة الأولى لكمال الأجسام واللياقة البدنية</p>
+                </div>
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="articles.html">المقالات</a></li>
+                        <li><a href="protein.html">البروتين والمكملات</a></li>
+                        <li><a href="plans.html">خطط التدريب</a></li>
+                        <li><a href="subscription.html">الاشتراكات</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>تواصل معنا</h3>
+                    <p><i class="fas fa-envelope"></i> info@jamawi.com</p>
+                    <p><i class="fas fa-phone"></i>01064621203</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 جماوي - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chat Widget -->
+    <div class="chat-button">
+        <i class="fas fa-comment-dots"></i>
+        <span>تحدث مع المدرب</span>
+    </div>
+    
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3><i class="fas fa-robot"></i> المدرب الافتراضي</h3>
+            <button class="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-initial-form">
+                <h4>دعنا نساعدك في تحقيق أهدافك</h4>
+                <p>يرجى ملء المعلومات التالية للحصول على توصيات مخصصة</p>
+                <div class="form-group-chat">
+                    <label for="user-name">الاسم</label>
+                    <input type="text" id="user-name" placeholder="أدخل اسمك">
+                </div>
+                <div class="form-group-chat">
+                    <label for="user-goal">هدفك</label>
+                    <select id="user-goal">
+                        <option value="">اختر هدفك</option>
+                        <option value="بناء العضلات">بناء العضلات</option>
+                        <option value="حرق الدهون">حرق الدهون</option>
+                        <option value="زيادة القوة">زيادة القوة</option>
+                        <option value="تحسين اللياقة">تحسين اللياقة</option>
+                    </select>
+                </div>
+                <div class="form-group-chat">
+                    <label for="user-level">مستواك الحالي</label>
+                    <select id="user-level">
+                        <option value="">اختر مستواك</option>
+                        <option value="مبتدئ">مبتدئ</option>
+                        <option value="متوسط">متوسط</option>
+                        <option value="متقدم">متقدم</option>
+                    </select>
+                </div>
+                <button class="start-chat-btn">ابدأ المحادثة</button>
+            </div>
+            <div class="chat-messages" style="display: none;">
+                <div class="chat-message bot">
+                    <div class="message-content">
+                        مرحبا! أنا المدرب الافتراضي في جماوي. كيف يمكنني مساعدتك اليوم؟
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-footer" style="display: none;">
+            <input type="text" class="chat-input" placeholder="اكتب رسالتك هنا...">
+            <button class="send-message"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="chat.js"></script>
+    <script>
+        // Article filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const articleCards = document.querySelectorAll('.article-card');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get filter value
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filter articles
+                    articleCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
